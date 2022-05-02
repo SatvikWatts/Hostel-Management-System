@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="det.js"></script>
+</head>
+<body>
+    <div class="circles">
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+    </div>
+    <img src="logo.png">  
+    <div class="f2">    
+        <h1 class="header">Enter Student's Details</h1>
+        <div class="flex">
+            <div class="flex-left">
+                <div class="txt_field">
+                    <input type="text" required id="name">
+                    <span></span>
+                    <label>Name</label>
+                </div>
+                <div><a id="error1">invalid name</a></div>
+                <div class="txt_field">
+                    <input type="text" required readonly="readonly" id="stdid">
+                    <label id='ss'>Student id</label>
+                </div>
+                <div><a id="error2">invalid id</a></div>
+                <div class="txt_field">
+                    <input type="text" required id="cno">
+                    <span></span>
+                    <label>Contact Number</label>
+                </div>
+                <div><a id="error3">invalid contact no.</a></div>
+                <div class="txt_field">
+                    <input type="text" required id="address">
+                    <span></span>
+                    <label>Address</label>
+                </div>
+                <div><a id="error4">invalid address</a></div>
+                <div class="txt_field">
+                    <input type="text" required readonly="readonly" id="acc_no">
+                    <label id='ss'>Account Number</label>
+                </div>
+                <div><a id="error5">invalid account no.</a></div>
+            </div>
+            <div class="flex-right">
+                <div class="txt_field">
+                    <input type="text" required id="mess_no">
+                    <span></span>
+                    <label>Mess Number</label>
+                </div>
+                <div><a id="error6">invalid mess no.</a></div>
+                <div class="txt_field">
+                    <select class="select" required id="dues"><option disabled selected hidden>Dues Paid?</option><option>Yes</option><option>No</option></select>
+                </div>
+                <div><a id="error7">Please select an option</a></div>
+                <div class="txt_field">
+                    <select onchange="fun();" class="select" required id="is_room"><option disabled selected hidden>Room allocated?</option><option>Yes</option><option>No</option></select>
+                </div>
+                <div><a id="error8">Please select an option</a></div>
+                <div class="txt_field" id="rr" style="visibility: hidden">
+                    <input type="text" required id="room">
+                    <span></span>
+                    <label>Room Number</label>
+                </div>
+                <div><a id="error9">invalid room no.</a></div>
+
+            </div>
+        </div>
+        <div>
+            <input type="button" value="Update Details" class="button1" id="bb1" onclick="check()">
+                <input type="button" value="Cancel" class="button1" id="bb2" onclick="window.location.href='main_screen.html';">
+        </div>
+    </div>
+  </body>
+</html>

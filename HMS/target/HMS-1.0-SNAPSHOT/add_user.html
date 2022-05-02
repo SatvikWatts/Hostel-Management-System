@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="new_user.js"></script>
+</head>
+<body>
+    <div class="circles">
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+            <img src="logo.png">
+       
+        
+    <div class="center">    
+      <h1 class="header">Add a New User</h1>
+        <div class="txt_field">
+          <input type="text" required id='uname'> 
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div><a id='error1'>Oh No! You entered an invalid e-mail id</a></div>
+        <div class="txt_field">
+          <input type="password" required id='pass'>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div><a id='error2'>Oh No! You entered an invalid password</a></div>
+        <div>
+            <input type="button" class="button" value="Sign Up"onclick='check()'>
+        </div>
+        <div> <a id='error3'>Invalid email or password</a></div>
+    </div>
+  </body>
+</html>
