@@ -1,4 +1,4 @@
-# Hotel-Management-System
+# Hostel-Management-System
 
 Requirements:
   Netbeans IDE
